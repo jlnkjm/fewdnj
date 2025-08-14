@@ -133,7 +133,7 @@ struct conversionpage13: View {
                 .hidden()
             }
             
-            ConversionProgressBar(currentStep: 13)
+            ConversionProgressBar(currentStep: 13, initialProgress: 12.0 / 17.0)
         }
         .opacity(animateContent ? 1.0 : 0.0)
         .scaleEffect(animateContent ? 1.0 : 0.95)

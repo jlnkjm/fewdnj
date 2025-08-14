@@ -79,7 +79,7 @@ struct ConversionPage4: View {
                 .scaleEffect(animateContent ? 1.0 : 0.95)
                 .animation(.easeOut(duration: 0.8), value: animateContent)
                 
-                ConversionProgressBar(currentStep: 4)
+                ConversionProgressBar(currentStep: 4, initialProgress: 3.0 / 17.0)
             }
         }
         .navigationBarHidden(true)

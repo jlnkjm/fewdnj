@@ -70,7 +70,7 @@ struct ConversionPage2: View {
                     .scaleEffect(animateContent ? 1.0 : 0.95)
                     .animation(.easeOut(duration: 0.8), value: animateContent)
                     
-                    ConversionProgressBar(currentStep: 2)
+                    ConversionProgressBar(currentStep: 2, initialProgress: 1.0 / 17.0)
                 }
             }
             // Attach the navigationDestination modifier to the NavigationStack

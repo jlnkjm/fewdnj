@@ -201,7 +201,7 @@ struct ConversionPage17: View {
                     .opacity(animateContent ? 1.0 : 0.0)
                     .animation(.easeInOut(duration: 0.8).delay(1.2), value: animateContent)
                     
-                    ConversionProgressBar(currentStep: 17)
+                    ConversionProgressBar(currentStep: 17, initialProgress: 16.0 / 17.0)
                 }
             }
             

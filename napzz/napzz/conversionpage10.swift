@@ -222,7 +222,7 @@ struct ConversionPage10: View {
                 .hidden()
             }
             
-            ConversionProgressBar(currentStep: 10)
+            ConversionProgressBar(currentStep: 10, initialProgress: 9.0 / 17.0)
         }
         .opacity(animateContent ? 1.0 : 0.0)
         .scaleEffect(animateContent ? 1.0 : 0.95)

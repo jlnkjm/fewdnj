@@ -75,7 +75,7 @@ struct ConversionPage3: View {
                 .scaleEffect(animateContent ? 1.0 : 0.95)
                 .animation(.easeOut(duration: 0.8), value: animateContent)
                 
-                ConversionProgressBar(currentStep: 3)
+                ConversionProgressBar(currentStep: 3, initialProgress: 2.0 / 17.0)
             }
         }
         .navigationDestination(isPresented: $showNextPage) {

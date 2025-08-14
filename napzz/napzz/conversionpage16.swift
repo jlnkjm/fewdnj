@@ -276,7 +276,7 @@ struct ConversionPage16: View {
         .scaleEffect(animateContent ? 1.0 : 0.95)
         .animation(.easeOut(duration: 0.8), value: animateContent)
         
-        ConversionProgressBar(currentStep: 16)
+        ConversionProgressBar(currentStep: 16, initialProgress: 15.0 / 17.0)
         .navigationBarHidden(true)
         .onAppear {
             withAnimation {

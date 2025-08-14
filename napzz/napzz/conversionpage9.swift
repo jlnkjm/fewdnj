@@ -131,7 +131,7 @@ struct conversionpage9: View {
             .scaleEffect(animateContent ? 1.0 : 0.95)
             .animation(.easeOut(duration: 0.8), value: animateContent)
             
-            ConversionProgressBar(currentStep: 9)
+            ConversionProgressBar(currentStep: 9, initialProgress: 8.0 / 17.0)
             
             // Navigation link (invisible)
             NavigationLink(
