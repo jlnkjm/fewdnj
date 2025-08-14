@@ -156,6 +156,8 @@ struct ConversionPage14: View {
                 .padding(.bottom, 50)
             }
             
+            ConversionProgressBar(currentStep: 14, initialProgress: 13.0 / 17.0)
+            
             // Navigation link to sound machine page
             NavigationLink(
                 destination: ConversionPage15(),
@@ -168,8 +170,6 @@ struct ConversionPage14: View {
         .opacity(animateContent ? 1.0 : 0.0)
         .scaleEffect(animateContent ? 1.0 : 0.95)
         .animation(.easeOut(duration: 0.8), value: animateContent)
-        
-        ConversionProgressBar(currentStep: 14, initialProgress: 13.0 / 17.0)
         .navigationBarHidden(true)
         .onAppear {
             withAnimation {

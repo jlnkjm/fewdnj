@@ -112,7 +112,7 @@ struct conversionpage12: View {
             }
             
             ConversionProgressBar(currentStep: 12, initialProgress: 11.0 / 17.0)
-        }
+            
         .opacity(animateContent ? 1.0 : 0.0)
         .scaleEffect(animateContent ? 1.0 : 0.95)
         .animation(.easeOut(duration: 0.8), value: animateContent)
